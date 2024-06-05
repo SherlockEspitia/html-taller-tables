@@ -1,0 +1,117 @@
+:root{
+    --first-color: #F0EAD2;
+    --second-color: #DDE5B4;
+    --third-color: #ADC178;
+    --fourth-color: #A98467;
+    --fifth-color:  #6C584C;
+    --max-width: 92vw;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(245, 245, 220, 0.09);
+    font-family: monospace;
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    width: var(--max-width);
+    height: 10vh;
+    background-color: var(--first-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    width: var(--max-width);
+    height: 7.5vh;
+    background-color: var(--second-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0.5rem;
+    & > a{
+        text-decoration: none;
+        color: black;
+        margin: 1rem;
+        font-size: medium;
+        &:hover, &:focus{
+            color: white;
+            background-color: var(--fourth-color);
+            padding: 0.5rem;
+        }
+    }
+    
+}
+
+section{
+    width: var(--max-width);
+    height: calc(100vh - 27.5vh);
+    background-color: var(--fourth-color);
+    & h2{
+        background-color: var(--third-color);
+        padding-left: 0.45em;
+    }
+}
+
+#table-scroll{
+    height: calc(100vh - 28.5vh);
+    min-width: var(--max-width);
+    overflow: auto auto;
+    
+}
+
+table{
+    border-collapse: collapse;
+    width: var(--max-width);
+    min-height: calc(100vh - 32rem);
+    height: 95.8vh;
+    overflow-x: auto;
+}
+
+thead{
+    background-color: var(--first-color);
+}
+
+
+table, tbody, thead, tr, th, td{
+    border: 1px solid black;
+    padding: 10px 0px;
+    font-family: Roboto;
+}
+
+table>tbody tr:nth-child(even){
+    background-color: var(--fifth-color);
+    color:var(--first-color);
+}
+
+table>tbody tr:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+footer{
+    width: var(--max-width);
+    height: 10vh;
+    background-color: var(--first-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:after{
+        content: "Creado en 2024";
+    }
+}

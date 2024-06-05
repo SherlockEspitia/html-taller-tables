@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framework CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <style>
+        thead{
+            background-color: var(--first-color);
+        }
+        tbody{
+            background-color: white;
+        }
+        table>tbody tr:nth-child(even){
+            background-color: white;
+            color: black;
+        }
+        table>tbody tr:hover{
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+        }
+    </style>
+    <main>
+        <header>
+            <h1>
+                Framework para CSS
+            </h1>
+        </header>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="lenguajes-escritorio.html">Lenguajes de escritorio</a>
+            <a href="framework-css.html">Framework CSS</a>
+            <a href="framework-backend.html">Framework Backend</a>
+        </nav>
+        <section>
+            <article class="subtitle">
+                <h2>
+                    Principales frameworks para Frontend
+                </h2>
+            </article>
+            <div id="table-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Descripcion</th>
+                            <th>Version</th>
+                            <th>Compatibilidad</th>
+                            <th>Sitio web</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>Bootstrap</td>
+                            <td>El framework CSS más popular para desarrollar sitios web responsivos y móviles primero.</td>
+                            <td>5.3.0</td>
+                            <td>Todos los navegadores modernos</td>
+                            <td><a href="https://getbootstrap.com">getbootstrap.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>Foundation</td>
+                            <td>Framework CSS avanzado para crear sitios web responsivos y aplicaciones web.</td>
+                            <td>6.7.3</td>
+                            <td>Todos los navegadores modernos</td>
+                            <td><a href="https://get.foundation">get.foundation</a></td>
+                        </tr>
+                        <tr>
+                            <td>Bulma</td>
+                            <td>Framework CSS basado en Flexbox para crear diseños elegantes y responsivos.</td>
+                            <td>0.9.4</td>
+                            <td>Todos los navegadores modernos</td>
+                            <td><a href="https://bulma.io">bulma.io</a></td>
+                        </tr>
+                        <tr>
+                            <td>Tailwind CSS</td>
+                            <td>Framework CSS de utilidad primero para un diseño rápido y eficiente sin salir del HTML.</td>
+                            <td>3.2.7</td>
+                            <td>Todos los navegadores modernos</td>
+                            <td><a href="https://tailwindcss.com">tailwindcss.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>Semantic UI</td>
+                            <td>Framework CSS que utiliza clases legibles y semánticas.</td>
+                            <td>2.4.2</td>
+                            <td>Todos los navegadores modernos</td>
+                            <td><a href="https://semantic-ui.com">semantic-ui.com</a></td>                    
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <footer>
+
+        </footer>
+    </main>    
+</body>
+</html>
